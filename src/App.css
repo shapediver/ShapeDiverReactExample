@@ -1,0 +1,12 @@
+.App {
+  max-height: 100vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Grid {
+  max-height: 100vh;
+  min-height: 100vh;
+}
