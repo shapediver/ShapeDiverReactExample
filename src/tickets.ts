@@ -46,4 +46,9 @@ export const ShapeDiverExampleModels : {
 		ticket: "bec9dd357160b65fba715eb97718e131dda6166aa9e0517e14d5499ef3f683e946ea3f04dc5a76db6661de0f41cd5dc9dde40581e1f5909db8baa3a6c5ef456a30ab550aa456ef10366a0f5decfdf2476a7f331576b712b8a842b67e84420127879c76a7e672a7-d4000ab38e1640e18574381fa1ee5ea8",
 		modelViewUrl: "https://sdr7euc1.eu-central-1.shapediver.com"
 	},
+	"PointLineDrawingDemo": {
+		slug: "240312-pointlinedrawingdemo",
+		ticket: "367bfb32f99b1af97f567577657fcfc12ac3af1c5bb7ca219ba7cfa3c74d41329e40691d2d423c89a00c1354b17404565b0641074e21764c94f8c73ba782e6622a46b8c09ff3ec46616ed187002ac03d6881a5bde28afd4de18dfdb5aa55575b8ddb7ea3a59183-3da504eebfb78340ea4508e8b5350d0e",
+		modelViewUrl: "https://sdr7euc1.eu-central-1.shapediver.com"
+	},
 };

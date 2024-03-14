@@ -12,6 +12,7 @@ import CustomUiPage from "pages/examples/CustomUiPage";
 import AppBuilderStaticExamplePage from "./pages/appbuilder/AppBuilderStaticExamplePage";
 import AppBuilderPage from "pages/appbuilder/AppBuilderPage";
 import { useCustomTheme } from "hooks/ui/useCustomTheme";
+import DrawingToolsPage from "pages/examples/DrawingToolsPage";
 
 declare global {
 	interface Window {
@@ -32,7 +33,8 @@ export default function App() {
 			<HashRouter>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
-					<Route path="view" element={<ViewPage example="Sideboard" />} />
+					<Route path="view" element={<ViewPage example="PointLineDrawingDemo" />} />
+					<Route path="drawingTools" element={<DrawingToolsPage example="PointLineDrawingDemo" />} />
 					<Route path="appBuilder" element={<AppBuilderPage example="AppBuilderExampleDiagrid" />} />
 					<Route path="appBuilderTest" element={<AppBuilderStaticExamplePage example="AR Cube" />} />
 					<Route path="modelSelect" element={<ModelSelectPage />} />
