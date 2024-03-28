@@ -1,0 +1,69 @@
+.appShellMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "main main main"
+    "main main main"
+    "aside aside aside";
+}
+
+.appShellMainLandscape {
+    grid-template-areas:
+    "main main aside"
+    "main main aside"
+    "main main aside"
+}
+
+.appShellMainMain {
+    grid-area: main;
+}
+
+.appShellMainAside {
+    grid-area: aside;
+    height: 300px;
+    max-height: 100%;
+}
+
+/**
+ * Breakpoints defined by the theme (CSS variables) can't be used in media queries, 
+ * see https://mantine.dev/styles/responsive/ 
+ */
+@media (max-width: 36em) {
+    .appShellMain, .appShellMainAsideLandscape {
+        height: calc(100vh - var(--appbuilder-appshelltemplate-headerheight-xs));
+        max-height: calc(100vh - var(--appbuilder-appshelltemplate-headerheight-xs));
+    }
+}
+
+@media (max-width: 48em) {
+    .appShellMain, .appShellMainAsideLandscape {
+        height: calc(100vh - var(--appbuilder-appshelltemplate-headerheight-sm));
+        max-height: calc(100vh - var(--appbuilder-appshelltemplate-headerheight-sm));
+    }
+}
+
+@media (max-width: 62em) {
+    .appShellMain, .appShellMainAsideLandscape {
+        height: calc(100vh - var(--appbuilder-appshelltemplate-headerheight-md));
+        max-height: calc(100vh - var(--appbuilder-appshelltemplate-headerheight-md));
+    }
+}
+
+@media (max-width: 75em) {
+    .appShellMain, .appShellMainAsideLandscape {
+        height: calc(100vh - var(--appbuilder-appshelltemplate-headerheight-lg));
+        max-height: calc(100vh - var(--appbuilder-appshelltemplate-headerheight-lg));
+    }
+}
+
+@media (min-width: 75em) {
+    .appShellMain, .appShellMainAsideLandscape {
+        height: calc(100vh - var(--appbuilder-appshelltemplate-headerheight-xl));
+        max-height: calc(100vh - var(--appbuilder-appshelltemplate-headerheight-xl));
+    }
+}
+
+.appShellMainAside, .appShellMainNavbar {
+    overflow: auto;
+}
